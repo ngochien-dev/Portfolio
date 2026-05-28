@@ -69,7 +69,7 @@ export default function Navbar() {
           <div className="navbar__actions">
             <ThemeToggle />
             <a
-              href="/NguyenNgocHien_InternTester.pdf"
+              href="https://s3.topcv.vn/data-cvs/topcv-cv-uploads/d10f986b088238e591b03f6037a3d26c.pdf?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=s3-tp-topcv%2F20260528%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260528T174531Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Signature=0a87d8d9691fb0f9c0dd77707ce40239e2187fc03f6d6fda6e9e9dcc963c10e8"
               target="_blank"
               rel="noopener noreferrer"
               className="navbar__resume-btn"
