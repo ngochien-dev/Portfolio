@@ -1,0 +1,35 @@
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Skills from './components/Skills';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+
+function App() {
+  return (
+    <>
+      {/* Background grid pattern */}
+      <div className="bg-grid" />
+
+      {/* Navigation */}
+      <Navbar />
+
+      {/* Main Content */}
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </>
+  );
+}
+
+export default App;
