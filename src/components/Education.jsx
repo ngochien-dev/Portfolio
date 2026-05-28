@@ -49,24 +49,6 @@ export default function Education() {
 
           <div className="education__details">
             <div className="education__detail-item">
-              <div className="education__detail-icon education__detail-icon--cyan">
-                <FiBookOpen size={18} />
-              </div>
-              <div>
-                <h4 className="education__detail-title">Relevant Coursework</h4>
-                <div className="education__coursework">
-                  {['Software Engineering', 'Software Quality Assurance and Testing', 'Software Architecture and Design'].map(
-                    (course) => (
-                      <span key={course} className="education__course-tag">
-                        {course}
-                      </span>
-                    )
-                  )}
-                </div>
-              </div>
-            </div>
-
-            <div className="education__detail-item">
               <div className="education__detail-icon education__detail-icon--amber">
                 <FiAward size={18} />
               </div>

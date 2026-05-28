@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenu, HiX } from 'react-icons/hi';
+import ThemeToggle from './ThemeToggle';
 import './Navbar.css';
 
 const navLinks = [
@@ -65,22 +66,25 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <a
-            href="/NguyenNgocHien_InternTester.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="navbar__resume-btn"
-          >
-            Resume
-          </a>
+          <div className="navbar__actions">
+            <ThemeToggle />
+            <a
+              href="/NguyenNgocHien_InternTester.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="navbar__resume-btn"
+            >
+              Resume
+            </a>
 
-          <button
-            className="navbar__mobile-toggle"
-            onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileOpen ? <HiX size={24} /> : <HiMenu size={24} />}
-          </button>
+            <button
+              className="navbar__mobile-toggle"
+              onClick={() => setMobileOpen(!mobileOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileOpen ? <HiX size={24} /> : <HiMenu size={24} />}
+            </button>
+          </div>
         </div>
       </motion.nav>
 

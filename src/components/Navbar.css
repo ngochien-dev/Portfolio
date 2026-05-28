@@ -10,7 +10,7 @@
 }
 
 .navbar--scrolled {
-  background: rgba(10, 10, 15, 0.85);
+  background: var(--bg-navbar);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border-subtle);
@@ -21,6 +21,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .navbar__logo {
@@ -122,7 +128,7 @@
   right: 0;
   bottom: 0;
   z-index: 999;
-  background: rgba(10, 10, 15, 0.95);
+  background: var(--bg-navbar-mobile);
   backdrop-filter: blur(20px);
   display: flex;
   flex-direction: column;
